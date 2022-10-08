@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px red solid;
+    height: 100vh;
+    background-color: hsl(218, 23%, 16%);
+}
+
+.advice{
+    background-color:  hsl(217, 19%, 24%);
+    width: 32vw;
+    border-radius: 1rem;
+    height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 0;
+}
+.advice h3 {
+    color: hsl(150, 100%, 66%);
+    letter-spacing:2px;
+}
+
+.dice{
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 47.8%;
+    bottom:26%;
+    width: 8vh;
+    height: 8vh;
+    border-radius:50% ;
+    cursor: pointer;
+}
+
+.dice:hover {
+    box-shadow: 1px -1px 50px 11px rgba(82,255,168,0.75);
+    -webkit-box-shadow: 1px -1px 50px 11px rgba(82,255,168,0.75);
+    -moz-box-shadow: 1px -1px 50px 11px rgba(82,255,168,0.75);
+}
+.imgdice {
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+    
+}
+.advice h2 {
+    font-size: 28px;
+    color: aliceblue;
+    text-align: center;
+}
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .advice{
+        width: 90vw;
+        height: 90vw;
+        gap: 1.5rem;
+    }
+    .advice h2 {
+        font-size: 22px;
+    }
+    .advice h3 {
+        font-size: 15px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile {
+        display: flex;
+        width: 80%;
+    }
+    .dice {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        left: 42%;
+        bottom: 23%;
+        padding: 1rem;
+    }
+    .imgdice {
+        width: 18px;
+    }
+}
